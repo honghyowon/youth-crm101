@@ -13,11 +13,11 @@ public class Problem07 {
 		System.out.println("       [숫자맞추기게임 시작]       ");
 		System.out.println("==============================");
 
+		Scanner sc = new Scanner(System.in);
+
 		while (true) {
 			int num = (int) (Math.random() * 100 + 1);
 //			System.out.println(num);
-
-			Scanner sc = new Scanner(System.in);
 
 			while (true) {
 				System.out.print(">> ");
@@ -39,8 +39,8 @@ public class Problem07 {
 						System.out.println("==============================");
 						sc.close();
 						return;
-					} else if("n".equals(choice)) {
-						break; 
+					} else if ("n".equals(choice)) {
+						break;
 					}
 				}
 			}
